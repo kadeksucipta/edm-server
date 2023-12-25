@@ -1,0 +1,32 @@
+GET http://localhost:5000/users
+
+###
+GET http://localhost:5000/users/1
+
+###
+
+
+###
+PATCH http://localhost:5000/users/1
+Content-Type: application/json
+
+{
+    "name": "M Fikri",
+    "email": "mfikri@gmail.com",
+    "gender": "Male"
+}
+
+###
+DELETE http://localhost:5000/users/2
+
+###
+POST http://localhost:5000/users
+Content-Type: application/json
+
+{
+    "name": "Edumatrix Indonesia",
+    "email": "admin@gmail.com",
+    "password": "EdumatrixJaya2024",
+    "confPassword": "EdumatrixJaya2024",
+    "role": "admin"
+}
